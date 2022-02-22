@@ -119,9 +119,9 @@ figures. Until you've completed all the parts, you may safely leave these
 captions blank.
 
 ```{r code block to create descriptive captions}
-caption_4 <- 'Descriptive Caption for part 4 here'
-caption_5 <- 'Descriptive Caption for part 5 here'
-caption_8 <- 'Descriptive Caption for part 8 here'
+caption_4 <- 'Figure 1. Variance explained and cumulative variance for the principal components, the graph contains both, a barchart representing the variance explained by each individual principal component. With a scatterplot that displays the cumulative sum of the variance explained across all the principal components.'
+caption_5 <- 'Figure 2. Principal Component Analysis (PCA) plot illustrating the first and second principal components across the CC subtypes.'
+caption_8 <- 'Figure 3. Heatmap of normalized intensity values of gene expression across samples.'
 ```
 
 ## 4. Plot the variance explained and cumulative variance for the PCs
@@ -225,6 +225,6 @@ in-depth into these topics, and you will run `heatmap()` with default options
 besides `col`.
 
 ```{r code block to plot heatmap of normalized intensity values for DE probes, fig.cap = caption_8}
-plot_heatmap(de_intensity, 11, 'RdBu')
+plot_heatmap(de_intensity, 11, 'PiYG')
 ```
 
